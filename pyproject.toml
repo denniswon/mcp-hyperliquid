@@ -2,9 +2,13 @@
 name = "hyperliquid-mcp-python"
 version = "0.1.0"
 description = "HyperLiquid MCP Server with FastMCP - Trading tools and account management"
-authors = ["Gigabrain <chetan@gigabrain.gg>"]
+authors = ["Dennis Won <dennis.won@hyperliquid.finance>"]
 readme = "README.md"
 packages = [{ include = "services" }]
+
+[tool.poetry.scripts]
+start = "main:start_server"
+stdio = "main:stdio_server"
 
 [tool.poetry.dependencies]
 python = "^3.11"
